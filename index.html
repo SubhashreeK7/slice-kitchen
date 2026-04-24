@@ -15,6 +15,12 @@
         body{
             background: linear-gradient(to right, #FFF3E0, #ffe0b2);
             font-family: system-ui, sans-serif;
+            max-width: 1200px;
+            margin: auto;
+        }
+        ::selection {
+          background: #f4a26a;
+          color: white;
         }
         .hero{
             display: flex;
@@ -127,6 +133,10 @@
             transform: translateY(-12px) scale(1.03);
             box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             opacity: 1;
+        }
+        .card img:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease;
         }
         .why-row {
             margin-bottom: 60px;
@@ -242,12 +252,9 @@
             display: none;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.392);
         }
-        html {
-            scroll-behavior: smooth;
-        }
         section{
             margin-bottom: 80px;
-
+        }
         .navbar {
   display: flex;
   justify-content: space-between;
