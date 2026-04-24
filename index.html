@@ -289,37 +289,77 @@
         }
         @media (max-width: 768px) {
 
+  body {
+    padding: 0 10px;
+  }
+
+  /* HERO */
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
+
   .header {
     font-size: 40px;
   }
 
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 220px;
+    margin-top: 20px;
+  }
+
+  /* MENU CARDS */
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  /* WHY SECTION */
   .why-row {
     flex-direction: column;
-    gap: 15px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .why-text,
+  .why-image {
+    max-width: 100%;
+  }
+
+  .why-image img {
+    max-width: 200px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* FEEDBACK BOX */
+  .feedback-box {
+    width: 90%;
+    right: 5%;
+  }
+
+  /* SUCCESS MESSAGE */
+  .success-msg {
+    right: 10%;
+    bottom: 300px;
+    width: 70%;
     text-align: center;
   }
-  .why-text {
-    max-width: 50%;
-  }
-
-  .why-image {
-    max-width: 50%;
-  }
-  .why-image img {
-    max-width: 140px;
-  }
-  .why-text h2 {
-    font-size: 16px;
-  }
-  .why-text p {
-    font-size: 13px;
-  }
-
 }
     </style>
 </head>
