@@ -238,6 +238,36 @@
             display: none;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.392);
         }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            color: #D62828;
+            font-family: "Freckle Face";
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;          }
+        }
+        .nav-links a:hover {
+            color: #D62828;
+        }
         @media (max-width: 768px) {
 
   .hero {
@@ -275,17 +305,26 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+      <h2 class="logo">🍕 Slice Kitchen</h2>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <section class="hero">
         <div class="hero-text">
             <h1 class="header">Slice Kitchen</h1>
             <p class="tagline">Fresh hot pizza, delivered fast</p>
-            <button class="btn">Order Now</button><br><br>
+            <button class="btn">Order Fresh Pizza Now 🍕</button><br><br>
         </div>
         <div class="hero-image">
             <a href="https://ibb.co/sdWJwTLG"><img src="https://i.ibb.co/bMbRB4pZ/BBQ-chicken.png" alt="BBQ-chicken" border="0"></a>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
          <h1 class=title-menu>Hot & Fresh Picks</h1>
          <div class="cards">
             <div class="card">
@@ -314,7 +353,7 @@
             </div>
             </div>
     </section>
-    <section class="why-us">
+    <section class="why-us" id="why">
   <h1 class="why-title">Why Choose Us</h1>
   <div class="why-row">
     <div class="why-text">
@@ -352,7 +391,27 @@
         <button>Send</button>
     </div>
     <div class="success-msg">✅ Feedback sent successfully!</div>
-<footer class="footer">
+    <section class="reviews">
+  <h1 class="title-menu">What Our Customers Say</h1>
+
+  <div class="cards">
+    <div class="card">
+      <p>"Best pizza in town! Super fresh and tasty!"</p>
+      <h3>⭐⭐⭐⭐⭐ - Rahul</h3>
+    </div>
+
+    <div class="card">
+      <p>"Fast delivery and amazing flavors!"</p>
+      <h3>⭐⭐⭐⭐⭐ - Priya</h3>
+    </div>
+
+    <div class="card">
+      <p>"Loved the ambience and cheesy pizzas!"</p>
+        <h3>⭐⭐⭐⭐⭐ - Aman</h3>
+        </div>
+      </div>
+    </section>
+<footer class="footer" id="contact">
   <p>© 2026 Slice Kitchen | Made with 🍕 | Made by Subho</p>
 </footer>
     <script>
